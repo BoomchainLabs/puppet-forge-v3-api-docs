@@ -1,0 +1,68 @@
+{
+  "$schema": "https://cdn.scalar.com/schema/scalar-config-next.json",
+  "scalar": "2.0.0",
+  "info": {
+    "title": "Scalar Starter Kit",
+    "description": "Get Started with the Scalar Docs"
+  },
+  "siteConfig": {
+    "logo": {
+      "darkMode": "https://cdn.scalar.com/marketing/landing/logo-dark.svg",
+      "lightMode": "https://cdn.scalar.com/marketing/landing/logo-light.svg"
+    }
+  },
+  "navigation": {
+    "routes": {
+      "/": {
+        "type": "group",
+        "title": "Scalar Starter Kit",
+        "children": {
+          "/": {
+            "type": "page",
+            "filepath": "docs/content/quickstart.md",
+            "title": "Quickstart",
+            "icon": "phosphor/regular/fast-forward"
+          },
+          "/usage": {
+            "type": "group",
+            "title": "Usage",
+            "mode": "flat",
+            "children": {
+              "/development": {
+                "type": "page",
+                "filepath": "docs/content/development.md",
+                "title": "Development",
+                "icon": "phosphor/regular/code"
+              },
+              "/api-references": {
+                "type": "page",
+                "filepath": "docs/content/api-references.md",
+                "title": "API References",
+                "icon": "phosphor/regular/notebook"
+              },
+              "/documentation": {
+                "title": "Full Documentation",
+                "icon": "phosphor/regular/book",
+                "url": "https://scalar.com/products/docs/getting-started",
+                "type": "link"
+              }
+            }
+          },
+          "/examples": {
+            "type": "group",
+            "title": "Examples",
+            "mode": "flat",
+            "children": {
+              "/api": {
+                "type": "openapi",
+                "filepath": "docs/api-reference/openapi.yaml",
+                "title": "Example API",
+                "icon": "phosphor/regular/plug"
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
